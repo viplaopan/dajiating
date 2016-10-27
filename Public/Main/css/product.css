@@ -42,7 +42,7 @@
     display: inline-block;
     position: relative;
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 89px;
     margin-top: 8px;
     line-height: 30px;
     font-size: 1.8rem;
@@ -76,7 +76,8 @@
     margin-top: 0px;
 }
 .product-sidebar .product-lists ul {
-    max-width: 100%;
+    width: 100%;
+    padding:0;
 }
 .product-sidebar ul {
     width: 90%;
@@ -103,6 +104,7 @@
 }
 .product-sidebar ul li.active a.product-sidebar-url {
     color: #1ED0E1;
+    text-align: center;
 }
 .product-sidebar ul li {
     margin: 1.6875rem 0.125rem 1.6875rem 0;
