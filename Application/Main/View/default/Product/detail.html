@@ -25,7 +25,7 @@
                 <div class="product-lists">
       
         <ul style="top: -0px" data-notes-per-page="6" data-current-page="1">
-            <volist name="ltlists" id="vo" key="k">
+            <volist name="gtlists" id="vo" key="k">
             <li>
                     <a class="product-sidebar-url" data-toggle="" href="{:U('Main/Product/detail',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title}</a>
                 </li>
@@ -33,7 +33,7 @@
             <li class="active">
                 <a class="product-sidebar-url" data-toggle="" href="{:U('Main/Product/detail',array('id'=>$info['id']))}" title="{$info.title}">{$info.title}</a>
             </li>
-            <volist name="gtlists" id="vo" key="k">
+            <volist name="ltlists" id="vo" key="k">
                 <li>
                     <a class="product-sidebar-url" data-toggle="" href="{:U('Main/Product/detail',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title}</a>
                 </li>
