@@ -104,6 +104,9 @@
 }
 .product-sidebar ul li.active a.product-sidebar-url {
     color: #1ED0E1;
+    
+}
+.product-sidebar ul li a{
     text-align: center;
 }
 .product-sidebar ul li {
