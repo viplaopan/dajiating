@@ -17,8 +17,7 @@ use OT\DataDictionary;
 class ProductController extends HomeController {
 	//系统首页
     public function detail($id = 0){
-    	//详情gou
-       echo 2; //
+    	//详情
     	$map['status'] = 1;
         $info = D('Product')->where($map)->find($id);
     	$this->assign('info', $info);
