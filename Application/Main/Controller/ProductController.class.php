@@ -29,13 +29,13 @@ class ProductController extends HomeController {
         //列表
         $maplists['status'] = 1;
         $maplists['id'] = array('GT',$id);
-        $gtlists = D('Product')->where($maplists)->order("id asc")->limit(10)->select(); 
+        $gtlists = D('Product')->where($maplists)->order("id asc")->limit(3)->select(); 
         $this->assign('gtlists', $gtlists);
 
         //列表
         $maplists['status'] = 1;
         $maplists['id'] = array('LT',$id);
-        $ltlists = D('Product')->where($maplists)->order("id asc")->limit(10)->select(); 
+        $ltlists = D('Product')->where($maplists)->order("id asc")->limit(3)->select(); 
         $this->assign('ltlists', $ltlists);
         $this->display();
     }
