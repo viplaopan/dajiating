@@ -110,7 +110,9 @@
     margin: 1.6875rem 0.125rem 1.6875rem 0;
 }
 
-
+.product .content{
+    padding: 30px;
+}
 .product .article-tit{
      color: #ff6700;
      font-size: 24px;
