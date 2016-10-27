@@ -1,6 +1,5 @@
 .product{
     margin-top: 36px;
-
 }
 .product-sidebar {
     display: block;   
@@ -42,7 +41,7 @@
     display: inline-block;
     position: relative;
     margin-bottom: 10px;
-    margin-left: 89px;
+    margin-left: 62px;
     margin-top: 8px;
     line-height: 30px;
     font-size: 1.8rem;
@@ -106,11 +105,10 @@
     color: #1ED0E1;
     
 }
-.product-sidebar ul li a{
-    text-align: center;
-}
+
 .product-sidebar ul li {
     margin: 1.6875rem 0.125rem 1.6875rem 0;
+    padding-left: 75px;
 }
 
 .product .content{
