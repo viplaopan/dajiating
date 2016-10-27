@@ -1,0 +1,82 @@
+<extend name="Base/common"/>
+
+
+<block name="body">
+    
+    <section class="container">
+        {:W('Ad/topHtml')}
+    </section>
+    
+
+    <section class="container news-lists">
+        <div class="row">
+            
+            <div class="col-sm-4 col-sm-3-1">
+                <h1>
+                    <span class="glyphicon glyphicon-fire"></span>
+                    48小时快报
+                </h1>
+                <div class="border">
+                    <volist name="hots" id="vo">
+                        <div class="fast-item">
+                            <div class="item-inner">
+                                <div class="item-title"><a href="{:U('Main/Article/detail',array('id'=>$vo['id']))}">{$vo.title}</a></div>
+                                <div style="padding-bottom:10px;">
+                                    <a title="{$vo.title}" href="{:U('Main/Article/detail',array('id'=>$vo['id']))}">
+                                        <span class="item-time" data-stamp="1477265398">{$vo.create_time|date="H:i",###}</span>
+                                     <span class="item-time" style="margin-left:10px;">{$vo.media}</span>                                </div>
+                                    </a>
+                                
+                            </div>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+            <div class="col-sm-4 col-sm-3-2">
+                <div class="slider-tags clearfix">
+                        <div class="tags-box">
+                            <a class="tag" target="blank" href="" style="color:#63bacb;">
+                               公告： 创客大家庭 目前在开发阶段                          <span class="tag-icon"></span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="article-list">
+                        <volist name="hots" id="vo">
+                        <div class="article-item clearfix" data-id="304865">
+                            <div class="item-pic pull-left">
+                                <a target="_blank" href="{:U('Main/Article/detail',array('id'=>$vo['id']))}" title=""><img title="{$vo.title}" alt="{$vo.title}" src="{:get_cover($vo['cover_id'],'path')}"></a>
+                            </div>
+                            <div class="item-intro">
+                                <a target="_blank" href="{:U('Main/Article/detail',array('id'=>$vo['id']))}" class="item-title" title="{$vo.title}">{$vo.title}</a>
+                                <p class="item-desc">{$vo.description}</p>
+                                <div class="item-push-info">{$vo.media} | <span data-time="1477270369">{$vo.create_time|date="Y-m-d",###}</span></div>
+                            </div>
+                        </div>
+                        </volist>
+                    </div>
+            </div>
+            <div class="col-sm-4 col-sm-3-1">
+                <h1>
+                    <span class="glyphicon glyphicon-retweet"></span>
+                    发现新产品
+                </h1>
+                <div class="border">
+                    <volist name="pros" id="vo">
+                        <div class="conference-item import">
+                            <span class="glyphicon glyphicon-stop"></span>
+                            <a target="_blank" class="dot-1" title="{$vo.desc}" href="{:U('Main/Product/detail',array('id'=>$vo['id']))}">{$vo.title}</a>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</block>
+    <block name="script">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="__JS__/bootstrap.min.js"></script>
+    </block>

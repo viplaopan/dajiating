@@ -1,0 +1,98 @@
+#article .single-item {
+    position: relative;
+    width: 100%;
+    padding: 40px 68px 20px;
+    background: #fff;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px 1px 1px #e7e7e7;
+    -moz-box-shadow: 1px 1px 1px #e7e7e7;
+    -ms-box-shadow: 1px 1px 1px #e7e7e7;
+    -o-box-shadow: 1px 1px 1px #e7e7e7;
+    box-shadow: 1px 1px 1px #e7e7e7;
+}
+#article .article-hd {
+    padding-bottom: 10px;
+}
+.article-hd .article-tit {
+    font-size: 30px;
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
+.clearfix {
+    display: block;
+}
+.article-hd .author-time {
+    color: #999;
+    line-height: 26px;
+    vertical-align: middle;
+}
+.article-hd .article-tags {
+    overflow: hidden;
+}
+.pull-right {
+    float: right;
+}
+.article-hd .article-tags span, .article-hd .article-tags a {
+    color: #999;
+    line-height: 26px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.article-content {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+.col-24{padding-left: 0px;}
+
+.col-24 h1{
+    font-size:15px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-top: 2px solid #FF6700;
+    padding:8px;
+    background: #FFF;
+    margin:0;
+}
+.col-24 h1 .glyphicon-retweet,.col-24 h1 .glyphicon-fire {
+    color: #FF6700;
+    font-size: 13px;
+}
+.col-24 h1 .pannel-ico.active-ico{background-position: -116px 0px;}
+.col-24 .border{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-top:none;
+    float:left;
+    background: #FFF;
+    padding: 15px;
+    
+}
+
+.col-24 .border .item-inner {
+    padding-left: 20px;
+    border-left: 1px solid #efefef;
+}
+
+.col-24 .border .item-title {
+    width: 225px;
+    position: relative;
+    color: #333;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.col-24 .border .item-title:before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 2px;
+    width: 7px;
+    height: 15px;
+    background: url(../images/website_icon@2x.png) no-repeat;
+    background-size: 44px 95px;
+    background-position: 0px -79px;
+    background-color: #fff;
+}
