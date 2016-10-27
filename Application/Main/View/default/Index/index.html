@@ -42,7 +42,7 @@
                         
                     </div>
                     <div class="article-list">
-                        <volist name="hots" id="vo">
+                        <volist name="lists" id="vo">
                         <div class="article-item clearfix" data-id="304865">
                             <div class="item-pic pull-left">
                                 <a target="_blank" href="{:U('Main/Article/detail',array('id'=>$vo['id']))}" title=""><img title="{$vo.title}" alt="{$vo.title}" src="{:get_cover($vo['cover_id'],'path')}"></a>
