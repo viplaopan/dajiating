@@ -72,18 +72,23 @@
         <script>
             var defereds = [];
                 $imgs = $('.product-images ul li img');
-                $imgs.each(function() {
-                    var dfd = $.Deferred();
+                
+                var width = 0;
+                var num = $imgs.length;
+                var i = 0;
+                $.each($imgs,function(i,item){
+                    width += item.width+20;
+                    $(item).load(function(){
 
-                    $(this).load(dfd.resolve);
-                    defereds.push(dfd);
-                });
-                $.when.apply(null, defereds).done(function() {
-                    var width = 0;
-                    $.each($('.product-images ul li img'),function(i,item){
-                        width += item.width+20;
+                        i++;
+                        if(i == num){
+                            
+                            $(".screenshots").css('width',width);
+                        }
                     })
-                    $(".screenshots").css('width',width);
-                });
+                        
+                })
+                $(".screenshots").css('width',width);
+
         </script>
     </block>
