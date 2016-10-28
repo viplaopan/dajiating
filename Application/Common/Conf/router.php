@@ -15,6 +15,7 @@ return array(
         /*翡翠页面*/
 		'main/article/detail'         => 			'article/[id]',
 		'main/product/detail'         => 			'product/[id]',
+		'main/article/news'         => 			'news/',
     ),
 
 );

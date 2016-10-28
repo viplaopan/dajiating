@@ -29,6 +29,9 @@ class ArticleController extends HomeController {
         $this->display();
     }
     public function news(){
-        
+        $Document = D("Document");
+        $lists = $Document->select();
+        $this->assign('lists', $lists);
+        $this->display();
     }
 }
