@@ -28,5 +28,7 @@ class ArticleController extends HomeController {
     	$this->assign('info', $info);
         $this->display();
     }
-
+    public function news(){
+        
+    }
 }
