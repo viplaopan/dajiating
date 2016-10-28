@@ -47,20 +47,21 @@
                         </ul>
                     </div>
                 <div class="single-item">
-                    
-                    <div class="list-inner">
-                        <div class="article-item clearfix">
-                            <div class="item-pic pull-left">
-                                <a target="_blank" href="http://www.cyzone.cn/a/20161027/305018.html"><img src="http://img4.cyzone.cn/uploadfile/2016/1027/thumb_200_120_20161027062239136.jpg" alt=""></a>
-                            </div>
+                    <volist name="lists" id="vo"></volist>
+                        <div class="list-inner">
+                            <div class="article-item clearfix">
+                                <div class="item-pic pull-left">
+                                    <a target="_blank" href="{:U('Main/Article/detail',array('id'=>$vo['id']))}"><img src="{:get_cover($vo['cover_id'],'path')}" alt=""></a>
+                                </div>
 
-                            <div class="item-intro">
-                                <a target="_blank" href="http://www.cyzone.cn/a/20161027/305018.html" class="item-title">流量小，留存低，转化少？Get不到用户槽点，产品迭代快无非是加速死亡</a>
-                                <p class="item-desc">诸葛io可以帮你分析出用户在哪一步骤流失</p>
-                                <span class="item-push-info">赵东山 | <em data-time="1477563618">12分钟前</em></span>
+                                <div class="item-intro">
+                                    <a target="_blank" href="{:U('Main/Article/detail',array('id'=>$vo['id']))}" class="item-title" title="{$vo.title}">{$vo.title}</a>
+                                    <p class="item-desc">{$vo.description}</p>
+                                    <span class="item-push-info">{$vo.media} | <em data-time="1477563618">{$vo.create_time|date="Y-m-d",###}</em></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </volist>
                 </div>
             </div>
             <div class="col-sm-3 col-24">

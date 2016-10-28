@@ -30,7 +30,7 @@ class ArticleController extends HomeController {
     }
     public function news(){
         $Document = D("Document");
-        $lists = $Document->select();
+        $lists = $Document->lists(null);
         $this->assign('lists', $lists);
         $this->display();
     }
