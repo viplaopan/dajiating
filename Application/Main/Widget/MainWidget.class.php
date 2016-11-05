@@ -29,7 +29,7 @@ class MainWidget extends Controller{
                 //Banner
                 $four['status'] = 1;
                 $four['pos_id'] = 6;
-                $fours = D('Adv')->where($four)->limit(4)->order('sort desc')->select();
+                $fours = D('Adv')->where($four)->limit(2)->order('sort desc')->select();
                 $this->assign('fours',$fours);
         	$this->display('Widget/tophtml');
 	}
